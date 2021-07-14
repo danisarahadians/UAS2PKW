@@ -11,6 +11,6 @@ $diskon = $_POST['diskon'];
 
 
 //Menginput data ke database
-mysqli_query($koneksi, "insert into daftarbuku values('', '$nama_buku', '$kategori', '$penerbit', '$harga', '$diskon')");
+mysqli_query($koneksi, "insert into tokobuku values('', '$nama_buku', '$kategori', '$penerbit', '$harga', '$diskon')");
 //mengembalikan ke halaman awal
 header("location:./index.php");
